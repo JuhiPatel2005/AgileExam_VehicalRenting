@@ -3,7 +3,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
-def search():
+def register():
     if request.method == "POST":
         vehicleType = request.form.get("Type of vehicle", "")
 
@@ -22,3 +22,5 @@ def search():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+    
+""" added branch vehicle-booking"""
