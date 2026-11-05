@@ -8,7 +8,7 @@ def register():
         vehicleType = request.form.get("Type of vehicle", "")
 
         if not vehicleType:
-            return "All fields are required"
+            return "field is required for searching vehicles"
 
         return f"Vehicle {vehicleType} "
 
@@ -22,5 +22,5 @@ def register():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
-    
+
 """ added branch vehicle-booking"""
